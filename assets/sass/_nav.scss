@@ -1,9 +1,9 @@
 .nav {
-	background:#ffffff;
+	background-color:$branco;
 	height: 116px;
 	line-height: 107px;
 	text-align: center;
-	border-bottom: 9px #2c3e50 solid;
+	border-bottom: 9px $azul-escuro solid;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -17,12 +17,12 @@
 			float: right;
 		}
 		&:hover {
-			background:#c5ced7;
+			background-color: $cinza;
 		}
 		a {
 			font-size: 14px;
 			text-transform: uppercase;
-			color: #2c3e50;
+			color: $azul-escuro;
 			font-weight: bold;
 			text-decoration: none;
 			display: block;
