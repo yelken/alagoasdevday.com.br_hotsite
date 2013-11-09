@@ -1,0 +1,39 @@
+.nav {
+	background:#ffffff;
+	height: 116px;
+	line-height: 107px;
+	text-align: center;
+	border-bottom: 9px #2c3e50 solid;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	.nav-item {
+		display: inline-block;
+		height: 100%;
+		&.left-item {
+			float: left;
+		}
+		&.right-item {
+			float: right;
+		}
+		&:hover {
+			background:#c5ced7;
+		}
+		a {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #2c3e50;
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+			padding: 0 44px;
+		}
+	}
+	.nav-logo {
+		display: inline-block;
+		position: absolute;
+		left: 50%;
+		margin-left:-110px; 
+		top: 32px;
+	}
+}
