@@ -55,7 +55,6 @@ p {}
 		background-image: url(../images/website/srpite-icons.png);
 		background-repeat: no-repeat;
 		background-position: left top;
-		box-sizing: border-box;
 	}
 
 	span {
@@ -65,5 +64,42 @@ p {}
 		height: 80px;
 		line-height: 20px;
 		padding-top: 16px;
+	}
+}
+
+
+.speakers {
+	i {
+		background-position: left top;
+	}
+}
+
+.schedule {
+	i {
+		background-position: -160px top;
+	}
+}
+
+.lighting-talks {
+	i {
+		background-position: -320px top;
+	}
+}
+
+.registry {
+	i {
+		background-position: -480px top;
+	}
+}
+
+.sponsors {
+	i {
+		background-position: -640px top;
+	}
+}
+
+.realization {
+	i {
+		background-position: -800px top;
 	}
 }
