@@ -3,3 +3,67 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
 }
+
+//Text
+
+h1 {
+	font-size: 47px;
+}
+
+h2 {
+	font-size: 27px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+p {}
+
+//Title Pages
+
+.top-page {
+	background-color: $dark-blue;
+	border-radius: 8px;
+	height: 80px;
+	color: $white;
+	position: relative;
+	margin: 80px 0;
+
+	h2 {
+		float: left;
+		width: 280px;
+		display: inline-block;
+		height: 80px;
+		text-align: right;
+		line-height: 73px;
+		font-weight: bold;
+	}
+
+	i {
+		width: 159px;
+		height: 159px;
+		border-radius: 100px;
+		background-color: $green;
+		border: 6px solid $dark-green;
+		display: inline-block;
+		text-align: center;
+		float: left;
+		position: relative;
+		top: -39px;
+		margin: 0 25px;
+	}
+
+	span {
+		float: left;
+		width: 280px;
+		display: inline-block;
+		height: 80px;
+		line-height: 20px;
+		padding-top: 16px;
+	}
+}
+
+.speakers {
+
+}
