@@ -41,17 +41,21 @@ p {}
 	}
 
 	i {
-		width: 159px;
-		height: 159px;
+		width: 160px;
+		height: 160px;
 		border-radius: 100px;
 		background-color: $green;
 		border: 6px solid $dark-green;
 		display: inline-block;
-		text-align: center;
+		//text-align: center;
 		float: left;
 		position: relative;
 		top: -39px;
 		margin: 0 25px;
+		background-image: url(../images/website/srpite-icons.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		box-sizing: border-box;
 	}
 
 	span {
@@ -62,8 +66,4 @@ p {}
 		line-height: 20px;
 		padding-top: 16px;
 	}
-}
-
-.speakers {
-
 }
