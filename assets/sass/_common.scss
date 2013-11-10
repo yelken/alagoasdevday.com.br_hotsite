@@ -38,6 +38,7 @@ p {}
 		text-align: right;
 		line-height: 73px;
 		font-weight: bold;
+		//background-color: red;
 	}
 
 	i {
@@ -54,7 +55,6 @@ p {}
 		margin: 0 25px;
 		background-image: url(../images/website/srpite-icons.png);
 		background-repeat: no-repeat;
-		background-position: left top;
 	}
 
 	span {
@@ -64,42 +64,39 @@ p {}
 		height: 80px;
 		line-height: 20px;
 		padding-top: 16px;
+		padding-right: 20px;
+		//background-color: red;
 	}
 }
 
 
-.speakers {
-	i {
-		background-position: left top;
-	}
-}
 
 .schedule {
 	i {
-		background-position: -160px top;
+		background-position: -168px -10px;
 	}
 }
 
 .lighting-talks {
 	i {
-		background-position: -320px top;
+		background-position: -319px -8px;
 	}
 }
 
 .registry {
 	i {
-		background-position: -480px top;
+		background-position: -485px -10px;
 	}
 }
 
 .sponsors {
 	i {
-		background-position: -640px top;
+		background-position: -644px -6px;
 	}
 }
 
 .realization {
 	i {
-		background-position: -800px top;
+		background-position: -806px -10px;
 	}
 }
