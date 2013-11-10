@@ -3,16 +3,59 @@
 		background-position: left -10px;
 	}
 
-	.box.speaker {
-	figure {
-		border-radius: 5px 5px 0 0;
-		overflow: hidden;
-		img {
-			width: 100%;
-			
+	.speakers-list {
+		.speakers-item {
+			border-radius: 6px;
+			background-color: $dark-blue;
+			overflow: hidden;
+			color: $white;
+
+			.speaker-photo {}
+
+			.speaker-title {
+				text-align: center;
+				background-color: $green;
+				border-radius: 6px;
+				padding: 10px 0;
+				margin-top: -44px;
+				position: relative;
+
+				.speaker-name {
+					font-weight: bold;
+					display: block;
+				}
+				.speaker-job {
+					color: $blue;
+					display: block; 
+				}
+			}
+
+			.speaker-bio {
+				clear: both;
+				padding: 20px 30px;
+				font-size: 13px;
+				line-height: 18px;	
+			}
+
+			.speaker-social {
+				border-top: 1px solid #34495e;
+				li {
+					text-align: center;
+					height: 47px;
+					a {
+						color: $white;
+					}
+				}
+
+				li:first-child {
+					border-right: 1px solid #34495e;
+				}
+				li:last-child {
+					border-left: 1px solid #34495e;
+				}
+			}
+
 		}
-	}
-}
-	
+	}	
 
 }
