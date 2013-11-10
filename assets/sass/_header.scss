@@ -1,0 +1,30 @@
+header.header {
+	background: url('../images/website/bg-header.jpg') no-repeat top center;
+	height: 788px;
+	margin-top: 127px;
+	.section-screen {
+		max-width: 946px;
+		height: 291px;
+		background: $white;
+		margin: 0 auto;
+		margin-top: 240px;
+		border: $gray 10px solid;
+		text-align: center;
+		h2 {
+
+		}
+		h3 {
+			font-size: 27px;
+			color: $dark-blue;
+			font-weight: bold;
+			display: inline-block;
+			margin-top: 38px;
+		}
+		div {
+			font-size: 18px;
+			color: $dark-blue;
+			padding: 0 110px;
+			line-height: 19px;
+		}
+	}
+}
