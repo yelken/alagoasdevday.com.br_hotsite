@@ -11,20 +11,27 @@ header.header {
 		border: $gray 10px solid;
 		text-align: center;
 		h2 {
-
+			background: url('../images/website/prep-cp-popcorn.png') no-repeat center;
+			height: 59px;
+			width: 730px;
+			display: inline-block;
+			text-indent: -9999999px;
+			margin: 33px 0 30px 0;
 		}
 		h3 {
 			font-size: 27px;
 			color: $dark-blue;
 			font-weight: bold;
 			display: inline-block;
-			margin-top: 38px;
+			margin-top: 34px;
+			text-transform: uppercase;
+
 		}
 		div {
 			font-size: 18px;
 			color: $dark-blue;
-			padding: 0 110px;
-			line-height: 19px;
+			padding: 0 100px;
+			line-height: 22px;
 		}
 	}
 }
