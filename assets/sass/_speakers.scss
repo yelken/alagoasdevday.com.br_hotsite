@@ -11,14 +11,18 @@
 			color: $white;
 			margin-bottom: 30px;
 
-			.speaker-photo {}
+			.speaker-photo {
+				border-bottom: 2px solid $green;
+				height: 223px;
+				overflow: hidden;
+			}
 
 			.speaker-title {
 				text-align: center;
 				background-color: $green;
 				border-radius: 6px;
 				padding: 10px 0;
-				margin-top: -44px;
+				margin-top: -36px;
 				position: relative;
 
 				.speaker-name {
