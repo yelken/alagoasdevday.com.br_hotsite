@@ -9,6 +9,7 @@
 			background-color: $dark-blue;
 			overflow: hidden;
 			color: $white;
+			margin-bottom: 30px;
 
 			.speaker-photo {}
 
@@ -44,7 +45,30 @@
 					height: 47px;
 					a {
 						color: $white;
+						width: 40px;
+						height: 40px;
+						display: block;
+						position: relative;
+						margin: 0 auto;
+						overflow: hidden;
 					}
+
+					.twitter {
+						background-image: url(../images/website/sprite-social.png);
+						background-repeat: no-repeat;
+						background-position: left top;
+					}
+					.facebook {
+						background-image: url(../images/website/sprite-social.png);
+						background-repeat: no-repeat;
+						background-position: -40px top;
+					}
+					.linkedin {
+						background-image: url(../images/website/sprite-social.png);
+						background-repeat: no-repeat;
+						background-position: -80px top;
+					}
+
 				}
 
 				li:first-child {
