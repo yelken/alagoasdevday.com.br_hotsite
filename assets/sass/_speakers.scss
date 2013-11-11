@@ -51,24 +51,30 @@
 						position: relative;
 						margin: 0 auto;
 						overflow: hidden;
+						color: $green;
+						text-decoration: none;
+						line-height: 42px;
+						-webkit-transition: all 500ms ease;
+						-moz-transition: all 500ms ease;
+						-ms-transition: all 500ms ease;
+						-o-transition: all 500ms ease;
+						transition: all 500ms ease;
+
+						&:hover {
+							color: $yellow;
+						}			
 					}
 
-					.twitter {
-						background-image: url(../images/website/sprite-social.png);
-						background-repeat: no-repeat;
-						background-position: left top;
-					}
-					.facebook {
-						background-image: url(../images/website/sprite-social.png);
-						background-repeat: no-repeat;
-						background-position: -40px top;
-					}
-					.linkedin {
-						background-image: url(../images/website/sprite-social.png);
-						background-repeat: no-repeat;
-						background-position: -80px top;
-					}
 
+					.icon-linkedin:before { 
+						content: '\e800'; 
+						}
+					.icon-twitter:before { 
+						content: '\e801'; 
+						}
+					.icon-facebook:before { 
+						content: '\e802'; 
+						}
 				}
 
 				li:first-child {
