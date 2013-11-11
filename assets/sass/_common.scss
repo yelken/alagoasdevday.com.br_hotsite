@@ -4,6 +4,17 @@ body {
 	position: relative;
 }
 
+::-moz-selection {
+  color: $white;
+  background: $green;
+  text-shadow: none;
+}
+::selection {
+  color: $white;
+  background: $green;
+  text-shadow: none;
+}
+
 //Text
 
 h1 {
