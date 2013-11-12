@@ -100,3 +100,32 @@ p {}
 		background-position: -806px -10px;
 	}
 }
+
+
+footer {
+	background-color: $green;
+	text-align: center;
+	color: $white;
+	padding: 50px 0;
+	span {
+		display: block;
+		width: 100%;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-ms-transition: all 500ms;
+		-o-transition: all 500ms;
+		transition: all 500ms;
+		
+		&:hover {
+			color: $blue;
+		}
+	}
+}
