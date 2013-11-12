@@ -9,15 +9,20 @@
 			background-color: $dark-blue;
 			overflow: hidden;
 			color: $white;
+			margin-bottom: 30px;
 
-			.speaker-photo {}
+			.speaker-photo {
+				border-bottom: 2px solid $green;
+				height: 223px;
+				overflow: hidden;
+			}
 
 			.speaker-title {
 				text-align: center;
 				background-color: $green;
 				border-radius: 6px;
 				padding: 10px 0;
-				margin-top: -44px;
+				margin-top: -36px;
 				position: relative;
 
 				.speaker-name {
@@ -44,7 +49,34 @@
 					height: 47px;
 					a {
 						color: $white;
+						width: 40px;
+						height: 40px;
+						display: block;
+						position: relative;
+						margin: 0 auto;
+						overflow: hidden;
+						color: $green;
+						text-decoration: none;
+						line-height: 42px;
+						-webkit-transition: all 500ms ease;
+						-moz-transition: all 500ms ease;
+						-ms-transition: all 500ms ease;
+						-o-transition: all 500ms ease;
+						transition: all 500ms ease;
+
+						&:hover {
+							color: $yellow;
+						}			
 					}
+					.icon-linkedin:before { 
+						content: '\e800'; 
+						}
+					.icon-twitter:before { 
+						content: '\e801'; 
+						}
+					.icon-facebook:before { 
+						content: '\e802'; 
+						}
 				}
 
 				li:first-child {
@@ -57,5 +89,4 @@
 
 		}
 	}	
-
 }

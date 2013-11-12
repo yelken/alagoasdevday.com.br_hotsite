@@ -4,6 +4,17 @@ body {
 	position: relative;
 }
 
+::-moz-selection {
+  color: $white;
+  background: $green;
+  text-shadow: none;
+}
+::selection {
+  color: $white;
+  background: $green;
+  text-shadow: none;
+}
+
 //Text
 
 h1 {
@@ -38,7 +49,6 @@ p {}
 		text-align: right;
 		line-height: 73px;
 		font-weight: bold;
-		//background-color: red;
 	}
 
 	i {
@@ -48,7 +58,6 @@ p {}
 		background-color: $green;
 		border: 6px solid $dark-green;
 		display: inline-block;
-		//text-align: center;
 		float: left;
 		position: relative;
 		top: -39px;
@@ -65,15 +74,6 @@ p {}
 		line-height: 20px;
 		padding-top: 16px;
 		padding-right: 20px;
-		//background-color: red;
-	}
-}
-
-
-
-.schedule {
-	i {
-		background-position: -168px -10px;
 	}
 }
 
