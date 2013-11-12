@@ -1,0 +1,35 @@
+.social {
+	position: fixed;
+	left: 0;
+	top: 250px;
+	z-index: 200;
+	.btn-social {
+		background-color: $dark-green;
+		margin-bottom: 3px;
+		
+		a {
+			color: $white;
+			-webkit-transition: all 500ms;
+			-moz-transition: all 500ms;
+			-ms-transition: all 500ms;
+			-o-transition: all 500ms;
+			transition: all 500ms;
+			text-decoration: none;
+			padding: 0 10px;
+			line-height: 44px;
+
+			&:hover {
+				color: $yellow;
+			}
+		}
+
+		.icon-twitter:before { 
+			content: '\e801'; 
+			}
+		.icon-facebook:before { 
+			content: '\e802'; 
+			}
+
+	}
+
+}
