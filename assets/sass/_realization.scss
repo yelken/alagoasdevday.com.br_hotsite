@@ -1,0 +1,13 @@
+.realization {
+	position: relative;
+	height: 520px;
+	background:$green;
+	margin-top: 100px;
+	padding-top: 128px;
+	.top-page {
+		position: absolute;
+		left:50%;
+ 		margin-left:-385px;
+		top: -122px;
+	}
+}

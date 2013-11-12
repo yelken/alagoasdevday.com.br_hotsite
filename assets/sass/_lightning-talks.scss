@@ -1,0 +1,66 @@
+.lighting-talks {
+	position: relative;
+	height: 662px;
+	background:$yellow;
+	border-top: 5px solid $orange;
+	border-bottom: 5px solid $orange;
+	margin-top: 100px;
+	padding-top: 130px;
+	.top-page {
+		position: absolute;
+		left:50%;
+ 		margin-left:-385px;
+		top: -122px;
+	}
+
+	i.popcorn {
+		background: url('../images/website/popcorn.png');
+		width: 147px;
+		height: 239px;
+		display: block;
+		position: absolute;
+		bottom: -30px;
+		left: 50%;
+		margin-left:-64px;
+	}
+
+	.description-box {
+		font-size: 19px;
+		color: $white;
+		max-width: 630px;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 50px;
+		span {
+			color: $dark-blue;
+		}
+	}
+
+	.submit-box {
+		border: 4px $orange solid;
+		border-radius: 6px;
+		max-width: 630px;
+		margin: 0 auto;
+		padding: 26px;
+		font-size: 16px;
+		color: $dark-blue;
+		position: relative;
+		a {
+			background: $green;
+			color: $white;
+			display: block;
+			position: absolute;
+			padding: 20px 20px;
+			border-radius: 6px;
+			bottom: -34px;
+			left: 50%;
+			width: 316px;
+			margin-left: -158px;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+}
