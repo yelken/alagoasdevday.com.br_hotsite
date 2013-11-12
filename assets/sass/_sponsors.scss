@@ -1,0 +1,26 @@
+.sponsors {
+	i {
+		background-position: -644px -6px;
+	}
+
+	.sponsors-list {
+		margin-bottom: 30px;
+		.cetgory-sponsors {
+			background-color: $green;
+			color: $white;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 8px;
+			line-height: 82px;
+			font-size: 16px;
+		}
+
+		.offering {
+			background-color: $dark-blue;
+		}
+
+		.sponsor {
+			background-color: $yellow;
+		}
+	}
+}
