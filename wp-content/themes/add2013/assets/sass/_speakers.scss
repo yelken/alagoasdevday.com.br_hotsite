@@ -1,0 +1,92 @@
+.speakers {
+	i {
+		background-position: left -10px;
+	}
+
+	.speakers-list {
+		.speakers-item {
+			border-radius: 6px;
+			background-color: $dark-blue;
+			overflow: hidden;
+			color: $white;
+			margin-bottom: 30px;
+
+			.speaker-photo {
+				height: 223px;
+				overflow: hidden;
+				img {
+					border-bottom: 2px solid $green;					
+				}
+			}
+
+			.speaker-title {
+				text-align: center;
+				background-color: $green;
+				border-radius: 6px;
+				padding: 10px 0;
+				margin-top: -36px;
+				position: relative;
+
+				.speaker-name {
+					font-weight: bold;
+					display: block;
+				}
+				.speaker-job {
+					color: $blue;
+					display: block; 
+				}
+			}
+
+			.speaker-bio {
+				clear: both;
+				padding: 20px 30px;
+				font-size: 13px;
+				line-height: 18px;	
+			}
+
+			.speaker-social {
+				border-top: 1px solid #34495e;
+				li {
+					text-align: center;
+					height: 47px;
+					a {
+						color: $white;
+						width: 100%;
+						height: 40px;
+						display: block;
+						position: relative;
+						margin: 0 auto;
+						overflow: hidden;
+						color: $green;
+						text-decoration: none;
+						line-height: 42px;
+						-webkit-transition: all 500ms ease;
+						-moz-transition: all 500ms ease;
+						-ms-transition: all 500ms ease;
+						-o-transition: all 500ms ease;
+						transition: all 500ms ease;
+
+						&:hover {
+							color: $yellow;
+						}			
+					}
+					.icon-linkedin:before { 
+						content: '\e800'; 
+						}
+					.icon-twitter:before { 
+						content: '\e801'; 
+						}
+					.icon-facebook:before { 
+						content: '\e802'; 
+						}
+				}
+				li:first-child {
+					border-right: 1px solid #34495e;
+				}
+				li:last-child {
+					border-left: 1px solid #34495e;
+				}
+			}
+		}
+	}	
+}

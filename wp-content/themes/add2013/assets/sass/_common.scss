@@ -1,0 +1,131 @@
+body {
+	background-color: $white;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $green;
+  text-shadow: none;
+}
+::selection {
+  color: $white;
+  background: $green;
+  text-shadow: none;
+}
+
+.clr {
+	clear: both;
+}
+
+//Text
+
+h1 {
+	font-size: 47px;
+}
+
+h2 {
+	font-size: 27px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+p {}
+
+//Title Pages
+
+.top-page {
+	background-color: $dark-blue;
+	border-radius: 8px;
+	height: 80px;
+	color: $white;
+	position: relative;
+	margin: 80px 0;
+
+	h2 {
+		float: left;
+		width: 280px;
+		display: inline-block;
+		height: 80px;
+		text-align: center;
+		line-height: 73px;
+		font-weight: bold;
+		padding-left: 30px;
+	}
+
+	i {
+		width: 160px;
+		height: 160px;
+		border-radius: 100px;
+		background-color: $green;
+		border: 6px solid $dark-green;
+		display: inline-block;
+		float: left;
+		position: relative;
+		top: -39px;
+		margin: 0 25px;
+		background-image: url(../images/website/sprite-icons.png);
+		background-repeat: no-repeat;
+	}
+
+	span {
+		float: left;
+		width: 280px;
+		display: inline-block;
+		height: 80px;
+		line-height: 20px;
+		padding-top: 16px;
+		padding-right: 20px;
+	}
+}
+
+.lighting-talks {
+	i {
+		background-position: -319px -8px;
+	}
+}
+
+.registry {
+	i {
+		background-position: -485px -10px;
+	}
+}
+
+
+.realization {
+	i {
+		background-position: -806px -10px;
+	}
+}
+
+footer {
+	background-color: $green;
+	text-align: center;
+	color: $white;
+	padding: 50px 0;
+	
+	span {
+		display: block;
+		width: 100%;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-ms-transition: all 500ms;
+		-o-transition: all 500ms;
+		transition: all 500ms;
+		
+		&:hover {
+			color: $blue;
+		}
+	}
+}
