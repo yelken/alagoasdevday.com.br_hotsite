@@ -5,6 +5,7 @@ function add_setup() {
 
   add_theme_support('post-thumbnails');
   add_image_size( 'sponsor', '171', '83', false );
+  add_image_size( 'schedule', '70', '70', true );
 }
 add_action( 'after_setup_theme', 'add_setup' );
 

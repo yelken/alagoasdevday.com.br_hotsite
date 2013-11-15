@@ -80,28 +80,35 @@
 
     <div class="clr"></div>
 
-    <div class="schedule-item row">
-      <span class="speech-time two columns">08:00h</span>
-      <span class="ten columns">Credenciamento</span>
-    </div>
-
-    <div class="schedule-item row">
-      <span class="speech-time two columns">09:00h</span>
-      <span class="speaker three columns">
-
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/speakers/progr-bernard.jpg" alt="">
-        </figure>
-
-        <span class="speaker-name">Demian Borba</span>
-      </span>
-      <span class="speech-title seven columns">Descubra como esse conceito formado por cinco novas especificações irá revolucionar o modo como desenvolvemos e interagimos na web.</span>
-    </div>
-
-    <div class="schedule-item row">
-      <span class="speech-time two columns">10:00h</span>
-      <span class="ten columns">Intervalo</span>
-    </div>
+    <?php
+    $query = new WP_Query_Schedule();
+    while($query->have_posts()){
+      $query->the_post();
+      $time = get_post_meta( get_the_id(), 'hora', true );
+      $theme = get_post_meta( get_the_id(), 'tema', true );
+      if(empty($theme)){
+        ?>
+        <div class="schedule-item row">
+          <span class="speech-time two columns"><?php echo $time; ?></span>
+          <span class="ten columns"><?php the_title(); ?></span>
+        </div>
+        <?php
+      }else{
+        ?>
+        <div class="schedule-item row">
+          <span class="speech-time two columns"><?php echo $time; ?></span>
+          <span class="speaker three columns">
+            <figure>
+              <?php echo get_the_post_thumbnail(get_the_id(), 'schedule' );?>
+            </figure>
+            <span class="speaker-name"><?php the_title(); ?></span>
+          </span>
+          <span class="speech-title seven columns"><?php echo $theme; ?></span>
+        </div>
+        <?php
+      }
+    }
+    ?>
   </section> <!-- End Schedule -->
 
   <!-- Lightning Talk -->
