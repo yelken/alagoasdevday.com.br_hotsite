@@ -1,6 +1,6 @@
 <?php
 class Speakers {
-	var $meta_fields = array( 'empresa', 'twitter', 'facebook', 'linkedin' );
+	var $meta_fields = array( 'bio', 'empresa', 'twitter', 'facebook', 'linkedin', 'hidden' );
 
 	function __construct(){
 		// Registrar custom post types - http://codex.wordpress.org/Function_Reference/register_post_type
@@ -119,15 +119,19 @@ class Speakers {
 	function data_options(){
 		global $post;
 		$custom = get_post_custom($post->ID);
+		$bio = isset($custom["bio"]) ? $custom["bio"][0] : '';
 		$empresa = isset($custom["empresa"]) ? $custom["empresa"][0] : '';
 		$twitter = isset($custom["twitter"]) ? $custom["twitter"][0] : '';
 		$facebook = isset($custom["facebook"]) ? $custom["facebook"][0] : '';
 		$linkedin = isset($custom["linkedin"]) ? $custom["linkedin"][0] : '';
+		$hidden = isset($custom["hidden"]) ? $custom["hidden"][0] : '';
 		?>
+		<label>Bio:</label><br /> <textarea name="bio" style="width:100%;"><?php echo $bio; ?></textarea><br />
 		<label>Empresa:</label><br /> <input type="text" name="empresa" value="<?php echo $empresa; ?>" style="width:100%;" /><br />
 		<label>Twitter (URL completa):</label><br /> <input type="text" name="twitter" value="<?php echo $twitter; ?>" style="width:100%;" /><br />
 		<label>Facebook (URL completa):</label><br /> <input type="text" name="facebook" value="<?php echo $facebook; ?>" style="width:100%;" /><br />
 		<label>LinkedIn (URL completa):</label><br /> <input type="text" name="linkedin" value="<?php echo $linkedin; ?>" style="width:100%;" /><br />
+		<label>Esconder palestrante:</label><br /> <input type="checkbox" name="hidden" value="1"<?php echo ($hidden == 1 ? ' checked="checked"' : '')?>><br />
 		<?php
 	}
 
