@@ -8,36 +8,46 @@
 
         <div class="clr"></div>
 
-        <div class="row sponsors-list">
-          <div class="two columns cetgory-sponsors offering">Oferecimento</div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-        </div>
-
-        <div class="row sponsors-list">
-          <div class="two columns cetgory-sponsors sponsor">Ouro</div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-        </div>
-
-        <div class="row sponsors-list">
-          <div class="two columns cetgory-sponsors sponsor">Prata</div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-        </div>
-
-        <div class="row sponsors-list">
-          <div class="two columns cetgory-sponsors sponsor">Bronze</div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-        </div>
-
-        <div class="row sponsors-list">
-          <div class="two columns cetgory-sponsors">Apoio</div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-          <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
-        </div>
+        <?php
+        $args = array(
+          'hide_empty'    => false,
+        );
+        $taxonomy = 'niveis';
+        $categories = get_terms( $taxonomy, $args );
+        if(is_array($categories)){
+          foreach ($categories as $category) {
+            ?>
+            <div class="row sponsors-list">
+              <div class="two columns cetgory-sponsors <?php echo $category->slug; ?>"><?php echo $category->name; ?></div>
+              <?php
+              $args = array(
+                'tax_query' => array(
+                  'relation'  => 'AND',
+                  array(
+                    'taxonomy'         => $taxonomy,
+                    'field'            => 'slug',
+                    'terms'            => array( $category->slug ),
+                    'include_children' => true,
+                    'operator'         => 'IN'
+                  ),
+                ),
+              );
+              $query = new WP_Query_Partners( $args );
+              while($query->have_posts()){
+                $query->the_post();
+                ?>
+                <div class="two columns">
+                  <?php echo get_the_post_thumbnail(get_the_id(), 'sponsor' );?>
+                </div>
+                <?php
+              }
+              ?>
+              <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
+            </div>
+            <?php
+          }
+        }
+        ?>
       </section>
       <!-- End sponsors -->
 

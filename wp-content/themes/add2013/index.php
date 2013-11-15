@@ -134,7 +134,7 @@
     </div>
 
     <div class="container-registry-box">
-      <iframe src="http://www.eventick.com.br/frontinaracaju/embedded" frameborder="0" height="225px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
+      <iframe src="http://www.eventick.com.br/alagoasdevday/embedded" frameborder="0" height="225px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
     </div>
   </section> 
   <!-- End Registry -->
