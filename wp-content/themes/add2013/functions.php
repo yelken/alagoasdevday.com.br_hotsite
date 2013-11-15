@@ -4,8 +4,9 @@ function add_setup() {
   add_theme_support('automatic-feed-links');
 
   add_theme_support('post-thumbnails');
-  add_image_size( 'sponsor', '171', '83', false );
+  add_image_size( 'speaker', '376', '222', true );
   add_image_size( 'schedule', '70', '70', true );
+  add_image_size( 'sponsor', '171', '83', false );
 }
 add_action( 'after_setup_theme', 'add_setup' );
 

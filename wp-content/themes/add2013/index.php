@@ -10,64 +10,46 @@
     <div class="clearfix"></div>
 
     <ul class="speakers-list three_up tiles">
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-
-        <figure class="speaker-photo">
-          <img class="photo" src="<?php echo get_template_directory_uri(); ?>/assets/images/speakers/bernard.jpg" alt="Linus Torvalds" itemprop="image">
-        </figure>
-
-        <h3 class="speaker-title centered eight columns">
-            <span class="speaker-name">Bernard de Luna</span>
-            <span class="speaker-job">Brasiljs</span>
-        </h3>
-
-        <p class="speaker-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      
-        <ul class="speaker-social three_up tiles">
-          <li><a href="http://www.twitter.com/" title="Twitter" class="icon-twitter"></a></li>
-          <li><a href="http://facebook.com/" title="facebook" class="icon-facebook"></a></li>
-          <li><a href="http://linkedin.com/" title="linkedin" class="icon-linkedin"></a></li>
-        </ul>
-      </li>
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-
-        <figure class="speaker-photo">
-          <img class="photo" src="<?php echo get_template_directory_uri(); ?>/assets/images/speakers/bernard.jpg" alt="Linus Torvalds" itemprop="image">
-        </figure>
-
-        <h3 class="speaker-title centered eight columns">
-            <span class="speaker-name">Bernard de Luna</span>
-            <span class="speaker-job">Brasiljs</span>
-        </h3>
-
-        <p class="speaker-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      
-        <ul class="speaker-social three_up tiles">
-          <li><a href="http://www.twitter.com/" title="Twitter" class="icon-twitter"></a></li>
-          <li><a href="http://facebook.com/" title="facebook" class="icon-facebook"></a></li>
-          <li><a href="http://linkedin.com/" title="linkedin" class="icon-linkedin"></a></li>
-        </ul>
-      </li>  
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-
-        <figure class="speaker-photo">
-          <img class="photo" src="<?php echo get_template_directory_uri(); ?>/assets/images/speakers/bernard.jpg" alt="Linus Torvalds" itemprop="image">
-        </figure>
-
-        <h3 class="speaker-title centered eight columns">
-            <span class="speaker-name">Bernard de Luna</span>
-            <span class="speaker-job">Brasiljs</span>
-        </h3>
-
-        <p class="speaker-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      
-        <ul class="speaker-social three_up tiles">
-          <li><a href="http://www.twitter.com/" title="Twitter" class="icon-twitter"></a></li>
-          <li><a href="http://facebook.com/" title="facebook" class="icon-facebook"></a></li>
-          <li><a href="http://linkedin.com/" title="linkedin" class="icon-linkedin"></a></li>
-        </ul>
-      </li>  
-    </ul>        
+      <?php
+      $query = new WP_Query_Speakers();
+      while($query->have_posts()){
+        $query->the_post();
+        $bio = get_post_meta( get_the_id(), 'bio', true );
+        $empresa = get_post_meta( get_the_id(), 'empresa', true );
+        $twitter = get_post_meta( get_the_id(), 'twitter', true );
+        $facebook = get_post_meta( get_the_id(), 'facebook', true );
+        $linkedin = get_post_meta( get_the_id(), 'linkedin', true );
+        $hidden = get_post_meta( get_the_id(), 'hidden', true );
+        ?>
+        <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+          <?php
+          if($hidden){
+            ?>
+            add some hidden style here
+            <?php
+          }else{
+            ?>
+            <figure class="speaker-photo">
+              <?php echo get_the_post_thumbnail(get_the_id(), 'speaker' );?>
+            </figure>
+            <h3 class="speaker-title centered eight columns">
+              <span class="speaker-name"><?php the_title(); ?></span>
+              <span class="speaker-job"><?php echo $empresa?></span>
+            </h3>
+            <p class="speaker-bio"><?php echo $bio; ?></p>
+            <ul class="speaker-social three_up tiles">
+              <li><a href="<?php echo $twitter; ?>" target="_blank" title="Twitter" class="icon-twitter"></a></li>
+              <li><a href="<?php echo $facebook; ?>" target="_blank" title="facebook" class="icon-facebook"></a></li>
+              <li><a href="<?php echo $linkedin; ?>" target="_blank" title="linkedin" class="icon-linkedin"></a></li>
+            </ul>
+            <?php
+          }
+          ?>
+        </li>
+        <?php
+      }
+      ?>
+    </ul>
   </section> <!-- End Speakers -->
 
   <!-- Schedule -->
