@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <!-- Speakers -->
-  <section class="speakers row">
+  <section class="speakers row" data-scroll-index="1">
     <div class="centered eight columns top-page">
       <h2>Nosso Elenco</h2>
       <i></i>
@@ -53,7 +53,7 @@
   </section> <!-- End Speakers -->
 
   <!-- Schedule -->
-  <section class="schedule row">
+  <section class="schedule row" data-scroll-index="2" >
     <div class="centered eight columns top-page">
       <h2>Roteiro</h2>
       <i></i>
@@ -93,29 +93,32 @@
     ?>
   </section> <!-- End Schedule -->
 
-  <!-- Lightning Talk -->
-  <section class="lighting-talks">
-    <div class="centered eight columns top-page">
-      <h2>Curtas metragens</h2>
-      <i></i>
-      <span class="description">Prepare seu roteiro e mande sua ideia para nós</span>
-    </div>
-
-    <div class="row">
-      <div class="description-box centered eight columns">
-        Você pode participar do Alagoas Dev Day com um <span>Lightning Talks</span> de 20 minutos. Serão 03 ideias escolhidas por voto popular.
+  
+  <section class="adapter" data-scroll-index="3">
+    <div class="lighting-talks"> <!-- Lightning Talk -->
+      <div class="centered eight columns top-page">
+        <h2>Curtas metragens</h2>
+        <i></i>
+        <span class="description">Prepare seu roteiro e mande sua ideia para nós</span>
       </div>
-      <div class="submit-box centered eight columns">
-        Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir aguardar a votação.
-        <a href="#">Envie seu roteiro agora mesmo</a>
-      </div>
-    </div>
 
-    <i class="popcorn"></i>
-  </section> <!-- End Lightning Talk -->
+      <div class="row">
+        <div class="description-box centered eight columns">
+          Você pode participar do Alagoas Dev Day com um <span>Lightning Talks</span> de 20 minutos. Serão 03 ideias escolhidas por voto popular.
+        </div>
+        <div class="submit-box centered eight columns">
+          Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir aguardar a votação.
+          <a href="#">Envie seu roteiro agora mesmo</a>
+        </div>
+      </div>
+
+      <i class="popcorn"></i>
+    </div> <!-- End Lightning Talk -->
+  </section>
+  
 
   <!-- Registry -->
-  <section class="registry row">
+  <section class="registry row" data-scroll-index="4">
     <div class="centered eight columns top-page">
       <h2>Bilhetes</h2>
       <i></i>

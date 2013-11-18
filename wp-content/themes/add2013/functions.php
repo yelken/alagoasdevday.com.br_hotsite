@@ -24,7 +24,7 @@ function add_scripts() {
   wp_enqueue_script( 'main' );
 
   // CSS
-  wp_enqueue_style( 'add-gumby', get_stylesheet_directory_uri() . '/assets/css/gumby.css' );
+  // wp_enqueue_style( 'add-gumby', get_stylesheet_directory_uri() . '/assets/css/gumby.css' );
   wp_enqueue_style( 'add-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'add_scripts' );

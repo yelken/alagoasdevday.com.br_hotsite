@@ -42,5 +42,20 @@
 		left: 50%;
 		margin-left:-100px; 
 		top: 32px;
+		img {
+			// transition: 0.2s ease-in-out;
+		}
+	}
+}
+
+.nav.stick {
+	.nav-logo {
+		top: 12px;
+		margin-left:-45px; 
+		text-align: center;
+		img {
+			// transition: 0.2s ease-in-out;
+			height: 120px;
+		}
 	}
 }

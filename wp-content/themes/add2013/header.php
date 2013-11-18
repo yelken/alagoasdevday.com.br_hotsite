@@ -20,10 +20,6 @@
   <meta property="og:description" content="Juntamos o visual de uma cidade paradisíaca, um lugar que respira arte e separamos um dia para conversar apenas sobre programação. O resultado disso tudo é uma experiência incrível sobre desenvolvimento em diversas linguagens.">
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.jpg">
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Place favicon.ico and apple-touch-icon.png in the <?php echo get_template_directory_uri(); ?>/assets/images/icons directory -->
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -38,13 +34,13 @@
   <nav class="nav container">
     <ul class="nav-items row">
       <li class="nav-item left-item">
-        <a href="#" title="Sinopse">Sinopse</a>
+        <a href="javascript:void(0)" data-scroll-nav="0" title="Sinopse">Sinopse</a>
       </li>
       <li class="nav-item left-item">
-        <a href="#" title="Elenco">Elenco</a>
+        <a href="javascript:void(0)" data-scroll-nav="1" title="Elenco">Elenco</a>
       </li>
       <li class="nav-item left-item">
-        <a href="#" title="Roteiro">Roteiro</a>
+        <a href="javascript:void(0)" data-scroll-nav="2" title="Roteiro">Roteiro</a>
       </li>
       <li class="nav-logo">
         <h1 class="logo-name">
@@ -52,13 +48,14 @@
         </h1>
       </li>
       <li class="nav-item right-item">
-        <a href="#" title="Bilhetes">Bilhetes</a>
+        <a href="javascript:void(0)" data-scroll-nav="5" title="Patrocínio">Patrocínio</a>
       </li>
       <li class="nav-item right-item">
-        <a href="#" title="Patrocínio">Patrocínio</a>
+        <a href="javascript:void(0)" data-scroll-nav="4" title="Bilhetes">Bilhetes</a>
       </li>
+      
       <li class="nav-item right-item">
-        <a href="#" title="Curtas">Curtas</a>
+        <a href="javascript:void(0)" data-scroll-nav="3" title="Curtas">Curtas</a>
       </li>
     </ul>
   </nav>
@@ -72,7 +69,7 @@
   <!-- End Social -->
 
   <!-- Header -->
-  <header class="header container">
+  <header class="header container" data-scroll-index="0">
     <div class="row">
       <div class="section-screen">
         <h3>12 de Abril no Arte Pajuçara</h3>

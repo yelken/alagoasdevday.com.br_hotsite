@@ -1,5 +1,5 @@
       <!-- Sponsors -->
-      <section class="sponsors row">
+      <section class="sponsors row"  data-scroll-index="5" >
         <div class="centered eight columns top-page">
           <h2>Patrocínio</h2>
           <i></i>
@@ -176,6 +176,22 @@
     </div>
     <!-- End container Main -->
     <?php wp_footer(); ?>
+      
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/scrollIt.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/waypoints.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function($){
+        $.scrollIt({
+          topOffset: -100
+        });
+        $('body').waypoint(function(direction) {
+            $("nav.nav").toggleClass('stick', direction=='down');
+
+        }, { offset: 50 });
+      })
+    </script>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
