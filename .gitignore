@@ -82,4 +82,6 @@ wp-content/themes/add2013/node_modules
 #Sass Cache#
 wp-content/themes/add2013/.sass-cache/
 
-
+#capistrano
+config
+Capfile
