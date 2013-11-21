@@ -23,7 +23,7 @@
 			background-color: $green;
 
 			figure {
-				width: 70px;
+				width: 72px;
 				height: 70px;
 				border-right: 2px solid $dark-green;
 				overflow: hidden;
@@ -55,6 +55,7 @@
 			text-align: left;
 			padding: 17px 20px;
 			line-height: 17px;
+			min-height: 72px;
 		}
 	}
 }
