@@ -180,7 +180,9 @@
     </div>
     <!-- End container Main -->
     <?php wp_footer(); ?>
-      
+    
+    <script src="http://www.doity.com.br/js/box_inscricao.js" type="text/javascript"></script>
+
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/scrollIt.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/waypoints.min.js"></script>
 

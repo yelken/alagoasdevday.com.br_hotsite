@@ -126,7 +126,13 @@
     </div>
 
     <div class="container-registry-box">
-      <iframe src="http://www.eventick.com.br/alagoasdevday/embedded" frameborder="0" height="225px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
+
+      <iframe scrolling="0" 
+                 id="iframe-inscricao" 
+                 onload="setIframeHeight(this.id)" 
+                 style="width: 100%;height: 500px;border: none;"
+                 src="http://www.doity.com.br/aldevday/passo1">
+      </iframe>
     </div>
   </section> 
   <!-- End Registry -->
