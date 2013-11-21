@@ -108,7 +108,7 @@
         </div>
         <div class="submit-box centered eight columns">
           Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir aguardar a votação.
-          <a href="#">Envie seu roteiro agora mesmo</a>
+          <a href="http://call4paperz.com/events/alagoas-dev-day" target="_blank">Envie seu roteiro agora mesmo</a>
         </div>
       </div>
 
