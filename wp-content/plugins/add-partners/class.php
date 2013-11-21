@@ -82,6 +82,7 @@ class Partners {
 		// filters
 		add_filter( 'posts_where', array( &$this, 'filter_where' ), 10, 2 );
 		add_filter( 'posts_orderby', array( &$this, 'filter_orderby' ), 10, 2 );
+		add_filter( 'post_type_link', array( &$this, 'post_type_link' ), 10, 3 );
 
 		// actions
 		add_action("template_include", array(&$this, 'template_include'));
@@ -90,6 +91,14 @@ class Partners {
 		add_action("wp_insert_post", array(&$this, "wp_insert_post"), 10, 2);
 
 		flush_rewrite_rules();
+	}
+
+	function post_type_link($permalink, $post, $leavename){
+		if (isset($post->post_type) && $post->post_type == "patrocinador"){
+			$custom = get_post_custom($post->ID);
+			return isset($custom["url"]) ? $custom["url"][0] : '';
+		}
+		return $permalink;
 	}
 
 	function pre_get_posts($query){
@@ -143,7 +152,7 @@ class Partners {
 
 	function admin_init(){
 		// Adicionando box de datas - http://codex.wordpress.org/Function_Reference/add_meta_box
-		add_meta_box("data", "Tema e Hora", array(&$this, "data_options"), "patrocinador", "normal", "high");
+		add_meta_box("data", "URL", array(&$this, "data_options"), "patrocinador", "normal", "high");
 	}
 
 	// Administrar conteúdo do post meta

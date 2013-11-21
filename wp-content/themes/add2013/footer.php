@@ -37,12 +37,16 @@
                 $query->the_post();
                 ?>
                 <div class="two columns">
-                  <?php echo get_the_post_thumbnail(get_the_id(), 'sponsor' );?>
+                  <?php if (get_permalink()) {?>
+                    <a href="<?php the_permalink();?>"><?php echo get_the_post_thumbnail(get_the_id(), 'sponsor' );?></a>
+                  <?php }else{?>
+                    <?php echo get_the_post_thumbnail(get_the_id(), 'sponsor' );?>
+                  <?php }?>
                 </div>
                 <?php
               }
               ?>
-              <div class="two columns"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></div>
+              <div class="two columns"><a href="mailto:contato@alagoasdevday.com.br"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></a></div>
             </div>
             <?php
           }

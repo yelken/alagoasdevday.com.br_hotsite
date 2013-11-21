@@ -112,7 +112,7 @@ class Speakers {
 
 	function admin_init(){
 		// Adicionando box de datas - http://codex.wordpress.org/Function_Reference/add_meta_box
-		add_meta_box("data", "Tema e Hora", array(&$this, "data_options"), "palestrante", "normal", "high");
+		add_meta_box("data", "Informações", array(&$this, "data_options"), "palestrante", "normal", "high");
 	}
 
 	// Administrar conteúdo do post meta
