@@ -74,7 +74,8 @@ config/
 Capfile
 
 
-
+#SublimeText
+*.sublime-*
 
 #Node Modules#
 wp-content/themes/add2013/node_modules
