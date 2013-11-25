@@ -37,25 +37,26 @@
 		}
 	}
 	.nav-logo {
+		background: url(../images/website/logo.png) no-repeat center top transparent;
 		display: inline-block;
 		position: absolute;
 		left: 50%;
 		margin-left:-100px; 
 		top: 32px;
-		img {
-			// transition: 0.2s ease-in-out;
-		}
+		width: 199px;
+		height: 274px;
+			-webkit-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+			-ms-transition: 0.2s ease-in-out;
+			-o-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
 	}
 }
 
 .nav.stick {
 	.nav-logo {
-		top: 12px;
-		margin-left:-45px; 
-		text-align: center;
-		img {
-			// transition: 0.2s ease-in-out;
-			height: 120px;
-		}
+		background: url(../images/website/logo-stick.png) no-repeat center top transparent;
+		width: 199px;
+		height: 145px;
 	}
 }
