@@ -43,9 +43,6 @@
         <a href="javascript:void(0)" data-scroll-nav="2" title="Roteiro">Roteiro</a>
       </li>
       <li class="nav-logo">
-        <h1 class="logo-name">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/logo.png" alt="Logo Alagoas Dev Day">
-        </h1>
       </li>
       <li class="nav-item right-item">
         <a href="javascript:void(0)" data-scroll-nav="5" title="Patrocínio">Patrocínio</a>
