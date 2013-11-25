@@ -181,7 +181,7 @@
         <div class="row">
           <div class="twelve columns" itemscope itemtype="http://schema.org/LocalBusiness">
             <span>Quer falar com a gente? Manda ver!</span>
-            <a href="callto:+558233177586" itemprop="telephone">82 3317.7586</a> | <a href="mailto:contato@alagoasdevday.com.br">contato@alagoasdevday.com.br</a> 
+            <a href="callto:+558230215586" itemprop="telephone">82 3021.5586</a> | <a href="mailto:contato@alagoasdevday.com.br">contato@alagoasdevday.com.br</a> 
           </div>
         </div>
       </footer>
