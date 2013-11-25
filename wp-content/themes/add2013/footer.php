@@ -32,6 +32,7 @@
                   ),
                 ),
               );
+              $i = 0;
               $query = new WP_Query_Partners( $args );
               while($query->have_posts()){
                 $query->the_post();
@@ -44,6 +45,13 @@
                   <?php }?>
                 </div>
                 <?php
+                if ($i++ % 5 == 4){
+                  ?>
+                  </div>
+                  <div class="row sponsors-list">
+                    <div class="two columns"></div>
+                  <?php
+                }
               }
               ?>
               <div class="two columns"><a href="mailto:contato@alagoasdevday.com.br"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/sponsors.png" alt=""></a></div>
@@ -173,7 +181,7 @@
         <div class="row">
           <div class="twelve columns" itemscope itemtype="http://schema.org/LocalBusiness">
             <span>Quer falar com a gente? Manda ver!</span>
-            <a href="callto:+558233177586" itemprop="telephone">82 3317.7586</a> | <a href="mailto:contato@alagoasdevday.com.br">contato@alagoasdevday.com.br</a> 
+            <a href="callto:+558230215586" itemprop="telephone">82 3021.5586</a> | <a href="mailto:contato@alagoasdevday.com.br">contato@alagoasdevday.com.br</a> 
           </div>
         </div>
       </footer>

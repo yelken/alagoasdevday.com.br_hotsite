@@ -107,7 +107,7 @@
           Você pode participar do Alagoas Dev Day com um <span>Lightning Talks</span> de 20 minutos. Serão 03 ideias escolhidas por voto popular.
         </div>
         <div class="submit-box centered eight columns">
-          Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir aguardar a votação.
+          Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir pra galera votar.
           <a href="http://call4paperz.com/events/alagoas-dev-day" target="_blank">Envie seu roteiro agora mesmo</a>
         </div>
       </div>
@@ -122,17 +122,22 @@
     <div class="centered eight columns top-page">
       <h2>Bilhetes</h2>
       <i></i>
-      <span class="description">Garanta já sua entrada e cuidado para não perder a hora</span>
+      <span class="description">Garanta já seu ingresso e cuidado para não perder a hora</span>
     </div>
 
     <div class="container-registry-box">
 
-      <iframe scrolling="0" 
-                 id="iframe-inscricao" 
-                 onload="setIframeHeight(this.id)" 
-                 style="width: 100%;height: 500px;border: none;"
-                 src="http://www.doity.com.br/aldevday/passo1">
-      </iframe>
+      <div class="row">
+        <div class="description-box centered eight columns">
+          Aproveite o primeiro lote de inscrições, com o valor promocional de <span class="price">R$45,00</span>. <span>Imperdível</span>.
+        </div>
+
+        <div class="submit-box centered eight columns">
+          O Alagoas Dev Day procura um público seleto e restrito, para um dia inteiro de codificação e muita pipoca.
+          <a href="http://www.doity.com.br/aldevday" target="_blank">Faça sua inscrição.</a>
+        </div>
+      </div>
+
     </div>
   </section> 
   <!-- End Registry -->

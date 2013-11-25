@@ -22,7 +22,7 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the <?php echo get_template_directory_uri(); ?>/assets/images/icons directory -->
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-144x144.png">
@@ -43,9 +43,6 @@
         <a href="javascript:void(0)" data-scroll-nav="2" title="Roteiro">Roteiro</a>
       </li>
       <li class="nav-logo">
-        <h1 class="logo-name">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/website/logo.png" alt="Logo Alagoas Dev Day">
-        </h1>
       </li>
       <li class="nav-item right-item">
         <a href="javascript:void(0)" data-scroll-nav="5" title="Patrocínio">Patrocínio</a>
