@@ -1,3 +1,59 @@
 .registry .container-registry-box{
 	padding-top: 80px;
+	padding-bottom: 200px ;
+
+	.description-box {
+		font-size: 19px;
+		color: $dark-blue;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 50px;
+
+		.price {
+			color: $green;
+			//text-shadow: 1px 1px $blue;
+		}
+		span {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+	.submit-box {
+		border: 3px $green solid;
+		border-radius: 6px;
+		padding: 32px 26px 60px 26px;
+		font-size: 16px;
+		color: $dark-blue;
+		position: relative;
+		text-align: center;
+		a {
+			text-transform: uppercase;
+			background-color: $green;
+			color: $white;
+			display: block;
+			position: absolute;
+			padding: 20px 20px;
+			border-radius: 6px;
+			bottom: -34px;
+			left: 50%;
+			width: 316px;
+			margin-left: -158px;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: 16px;
+			text-align: center;
+			border-bottom: 2px solid $dark-green;
+			-webkit-transition: all 500ms;
+			-moz-transition: all 500ms;
+			-ms-transition: all 500ms;
+			-o-transition: all 500ms;
+			transition: all 500ms;
+			&:hover {
+				background-color: #1dcaa8;
+				text-shadow: 1px 1px $dark-green;
+			}
+		}
+	}
+
 }

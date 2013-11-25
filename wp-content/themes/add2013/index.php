@@ -122,17 +122,22 @@
     <div class="centered eight columns top-page">
       <h2>Bilhetes</h2>
       <i></i>
-      <span class="description">Garanta já sua entrada e cuidado para não perder a hora</span>
+      <span class="description">Garanta já seu ingresso e cuidado para não perder a hora</span>
     </div>
 
     <div class="container-registry-box">
 
-      <iframe scrolling="0" 
-                 id="iframe-inscricao" 
-                 onload="setIframeHeight(this.id)" 
-                 style="width: 100%;height: 500px;border: none;"
-                 src="http://www.doity.com.br/aldevday/passo1">
-      </iframe>
+      <div class="row">
+        <div class="description-box centered eight columns">
+          Aproveite o primeiro lote de inscrições, com o valor promocional de <span class="price">R$45,00</span>. <span>Imperdível</span>.
+        </div>
+
+        <div class="submit-box centered eight columns">
+          O Alagoas Dev Day procura um público seleto e restrito, para um dia inteiro de codificação e muita pipoca.
+          <a href="http://www.doity.com.br/aldevday" target="_blank">Faça sua inscrição.</a>
+        </div>
+      </div>
+
     </div>
   </section> 
   <!-- End Registry -->
