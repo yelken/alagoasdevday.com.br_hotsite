@@ -13,6 +13,7 @@
   <meta name="description" content="Juntamos o visual de uma cidade paradisíaca, um lugar que respira arte e separamos um dia para conversar apenas sobre programação. O resultado disso tudo é uma experiência incrível sobre desenvolvimento em diversas linguagens." />
   <meta name="keywords" content="alagoas,devday" />
   <meta name="author" content="humans.txt">
+  <meta name="viewport" content="width=1210px, initial-scale=1">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://alagoasdevday.com.br">
@@ -20,9 +21,8 @@
   <meta property="og:description" content="Juntamos o visual de uma cidade paradisíaca, um lugar que respira arte e separamos um dia para conversar apenas sobre programação. O resultado disso tudo é uma experiência incrível sobre desenvolvimento em diversas linguagens.">
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.jpg">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the <?php echo get_template_directory_uri(); ?>/assets/images/icons directory -->
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-144x144.png">
