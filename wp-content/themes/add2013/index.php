@@ -107,7 +107,7 @@
           Você pode participar do Alagoas Dev Day com um <span>Lightning Talks</span> de 20 minutos. Serão 03 ideias escolhidas por voto popular.
         </div>
         <div class="submit-box centered eight columns">
-          Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir aguardar a votação.
+          Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir pra galera votar.
           <a href="http://call4paperz.com/events/alagoas-dev-day" target="_blank">Envie seu roteiro agora mesmo</a>
         </div>
       </div>
