@@ -9,7 +9,7 @@
 
     <div class="clearfix"></div>
 
-    <ul class="speakers-list three_up tiles">
+    <ul class="speakers-list tiles">
       <?php
       $query = new WP_Query_Speakers();
       while($query->have_posts()){
@@ -21,7 +21,7 @@
         $linkedin = get_post_meta( get_the_id(), 'linkedin', true );
         $hidden = get_post_meta( get_the_id(), 'hidden', true );
         ?>
-        <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        <li class="speakers-item columns four" itemprop="performer" itemscope itemtype="http://schema.org/Person">
           <?php
           if($hidden){
             ?>

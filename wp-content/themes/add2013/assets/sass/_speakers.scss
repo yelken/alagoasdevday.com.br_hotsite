@@ -11,6 +11,10 @@
 			color: $white;
 			margin-bottom: 30px;
 
+			&:nth-child(4),&:nth-child(7),&:nth-child(10) {
+				margin-left: 0;
+			}
+
 			.speaker-photo {
 				height: 223px;
 				overflow: hidden;
