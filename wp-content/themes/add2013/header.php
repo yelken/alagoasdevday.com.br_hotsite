@@ -13,22 +13,21 @@
   <meta name="description" content="Juntamos o visual de uma cidade paradisíaca, um lugar que respira arte e separamos um dia para conversar apenas sobre programação. O resultado disso tudo é uma experiência incrível sobre desenvolvimento em diversas linguagens." />
   <meta name="keywords" content="alagoas,devday" />
   <meta name="author" content="humans.txt">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://alagoasdevday.com.br">
   <meta property="og:title" content="Alagoas Dev Day">
   <meta property="og:description" content="Juntamos o visual de uma cidade paradisíaca, um lugar que respira arte e separamos um dia para conversar apenas sobre programação. O resultado disso tudo é uma experiência incrível sobre desenvolvimento em diversas linguagens.">
-  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.jpg">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/icon/facebook.jpg">
 
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple-touch-icon-144x144.png">
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon/apple-touch-icon-144x144.png">
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class();?>>
 
   <!-- Navigation -->
   <nav class="nav container">
@@ -59,14 +58,15 @@
   <!-- End Navigation -->
 
   <!-- Social -->
-  <nav class="social">
-    <a href="https://twitter.com/aldevday" title="Botão Twitter" target="_blank" class="btn-social icon-twitter"></a>
-    <a href="https://www.facebook.com/devdayalagoas" title="Botão Facebook" target="_blank" class="btn-social icon-facebook"></a>
-  </nav>
+  <section class="social">
+    <div class="btn-social"><a href="https://twitter.com/aldevday" target="_blank" class="icon-twitter"></a></div>
+    <div class="btn-social"><a href="https://www.facebook.com/devdayalagoas" target="_blank" class="icon-facebook"></a></div>
+  </section>
   <!-- End Social -->
 
   <!-- Header -->
-  <header class="header container" data-scroll-index="0">
+  <?php $add = get_option( 'add', array() );?>
+  <header class="header container bg-<?php echo $add['inscritos']?>" data-scroll-index="0">
     <div class="row">
       <div class="section-screen">
         <h3>12 de Abril no Arte Pajuçara</h3>
@@ -78,6 +78,5 @@
     </div>
   </header>
   <!-- End Header -->
-  
   <div class="container" id="content" role="main">
   

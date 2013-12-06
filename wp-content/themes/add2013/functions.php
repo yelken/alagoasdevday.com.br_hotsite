@@ -15,6 +15,7 @@ function add_init_scripts() {
     wp_register_script( 'modernizr', get_bloginfo('template_url') . '/assets/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2', false );
     wp_register_script( 'main', get_bloginfo('template_url') . '/assets/js/main.min.js', array('jquery'), '1.0', true );
   }
+new AddBackgroundSettings();
 }
 add_action( 'init', 'add_init_scripts' );
 
@@ -57,24 +58,73 @@ function add_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'add_wp_title', 10, 2 );
 
-// function add_register_sidebars() {
-//   register_sidebar(array(
-//     'id' => 'blog',
-//     'name' => 'Blog',
-//     'description' => '',
-//     'before_widget' => '<aside id="recent-posts-" class="widget widget_recent_entries">',
-//     'after_widget' => '</aside>',
-//     'before_title' => '<h3 class="widget-title">',
-//     'after_title' => '</h3>',
-//   ));
-//   register_sidebar(array(
-//     'id' => 'instagram',
-//     'name' => 'Instagram',
-//     'description' => '',
-//     'before_widget' => '<div class="carousel_index"><div id="foo2">',
-//     'after_widget' => '</div><div class="clearfix"></div><a class="prev" id="foo2_prev" href="#"><span></span></a> <a class="next" id="foo2_next" href="#"><span></span></a><div class="pagination" id="pagination"></div></div>',
-//     'before_title' => '',
-//     'after_title' => '',
-//   ));
-// }
-// add_action( 'widgets_init', 'add_register_sidebars' );
+class AddBackgroundSettings {
+  public function __construct(){
+    add_action( 'admin_menu', array( &$this, 'menu' ) );
+    add_action( 'admin_init', array( &$this, 'admin' ) );
+  }
+
+  public function menu() {
+    add_options_page( 'Inscrições Confirmadas', 'Inscrições', 'manage_options', 'add', array( &$this, 'page' ) );
+  }
+
+  public static function getSettings() {
+    $defaults = array(
+      'inscritos' => '0',
+    );
+    return wp_parse_args( get_option( 'add' ), $defaults );
+  }
+
+  public function page() {
+    global $title;
+    ?>
+    <div class="wrap">
+      <h2><?php echo $title; ?></h2>
+      <form action="options.php" method="POST">
+        <?php settings_fields( 'add-group' ); ?>
+        <?php do_settings_sections( 'add' ); ?>
+        <?php submit_button(); ?>
+      </form>
+    </div>
+    <?php
+  }
+
+  public function admin() {
+    $settings = AddBackgroundSettings::getSettings();
+    register_setting( 'add-group', 'add', array( &$this, 'add_validate' ) );
+    add_settings_section( 'add_section', 'Dados do PagSeguro', array( &$this, 'add_section' ), 'add' );
+    add_settings_field( 'add_inscritos', 'Quantidade de inscritos', array( &$this, 'text_input' ), 'add', 'add_section', array(
+        'name' => 'inscritos',
+        'type' => 'number',
+        'value' => $settings['inscritos'],
+      )
+    );
+  }
+
+  public function add_section() {
+    ?>
+    <p>Preencha a quantidade de inscritos confirmados para pintar o background da capa</p>
+    <?php
+  }
+
+  public function add_validate( $input ) {
+    $output = get_option( 'add' );
+    if ( !empty( $input['inscritos'] ) ) {
+      $output['inscritos'] = $input['inscritos'];
+    } else { 
+      add_settings_error( 'add', 'invalid-inscritos', 'Preencha a quantidade de inscritos confirmados do evento' );
+    }
+    return $output;
+  }
+
+  public function text_input( $args ) {
+    $defaults = array(
+      'type' => 'text',
+    );
+    $args = wp_parse_args( $args, $defaults );
+    $name = esc_attr( $args['name'] );
+    $value = esc_attr( $args['value'] );
+    $type = esc_attr( $args['type'] );
+    echo '<input type="' . $type . '" class="widefat" name="add[' . $name . ']" value="' . $value . '" />';
+  }
+}
