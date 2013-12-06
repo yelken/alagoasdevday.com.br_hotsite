@@ -60,10 +60,10 @@
   <!-- End Navigation -->
 
   <!-- Social -->
-  <section class="social">
-    <div class="btn-social"><a href="https://twitter.com/aldevday" target="_blank" class="icon-twitter"></a></div>
-    <div class="btn-social"><a href="https://www.facebook.com/devdayalagoas" target="_blank" class="icon-facebook"></a></div>
-  </section>
+  <nav class="social">
+    <a href="https://twitter.com/aldevday" title="Botão Twitter" target="_blank" class="btn-social icon-twitter"></a>
+    <a href="https://www.facebook.com/devdayalagoas" title="Botão Facebook" target="_blank" class="btn-social icon-facebook"></a>
+  </nav>
   <!-- End Social -->
 
   <!-- Header -->
@@ -79,5 +79,6 @@
     </div>
   </header>
   <!-- End Header -->
+  
   <div class="container" id="content" role="main">
   
