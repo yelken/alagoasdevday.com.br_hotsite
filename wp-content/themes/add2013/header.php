@@ -27,7 +27,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon/apple-touch-icon-144x144.png">
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class();?>>
 
   <!-- Navigation -->
   <nav class="nav container">
@@ -65,7 +65,8 @@
   <!-- End Social -->
 
   <!-- Header -->
-  <header class="header container" data-scroll-index="0">
+  <?php $add = get_option( 'add', array() );?>
+  <header class="header container bg-<?php echo $add['inscritos']?>" data-scroll-index="0">
     <div class="row">
       <div class="section-screen">
         <h3>12 de Abril no Arte Pajuçara</h3>

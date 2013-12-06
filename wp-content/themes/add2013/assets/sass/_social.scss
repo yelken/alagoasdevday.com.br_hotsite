@@ -7,7 +7,7 @@
 		background-color: $dark-green;
 		margin-bottom: 3px;
 		
-		a {
+		&,a {
 			color: $white;
 			-webkit-transition: all 500ms;
 			-moz-transition: all 500ms;
@@ -17,16 +17,17 @@
 			text-decoration: none;
 			padding: 0 10px;
 			line-height: 44px;
+			display: block;
 
 			&:hover {
 				color: $yellow;
 			}
 		}
 
-		.icon-twitter:before { 
+		&.icon-twitter:before { 
 			content: '\e801'; 
 			}
-		.icon-facebook:before { 
+		&.icon-facebook:before { 
 			content: '\e802'; 
 			}
 
