@@ -92,8 +92,8 @@ class AddBackgroundSettings {
   public function admin() {
     $settings = AddBackgroundSettings::getSettings();
     register_setting( 'add-group', 'add', array( &$this, 'add_validate' ) );
-    add_settings_section( 'add_section', 'Dados do PagSeguro', array( &$this, 'add_section' ), 'add' );
-    add_settings_field( 'add_inscritos', 'Quantidade de inscritos', array( &$this, 'text_input' ), 'add', 'add_section', array(
+    add_settings_section( 'add_section', 'Alagoas Dev Day', array( &$this, 'add_section' ), 'add' );
+    add_settings_field( 'add_inscritos', 'Percentual de inscritos', array( &$this, 'text_input' ), 'add', 'add_section', array(
         'name' => 'inscritos',
         'type' => 'number',
         'value' => $settings['inscritos'],
@@ -103,7 +103,7 @@ class AddBackgroundSettings {
 
   public function add_section() {
     ?>
-    <p>Preencha a quantidade de inscritos confirmados para pintar o background da capa</p>
+    <p>Preencha o percentual de inscritos confirmados para pintar o background da capa</p>
     <?php
   }
 
@@ -112,7 +112,7 @@ class AddBackgroundSettings {
     if ( !empty( $input['inscritos'] ) ) {
       $output['inscritos'] = $input['inscritos'];
     } else { 
-      add_settings_error( 'add', 'invalid-inscritos', 'Preencha a quantidade de inscritos confirmados do evento' );
+      add_settings_error( 'add', 'invalid-inscritos', 'Preencha o percentual de inscritos confirmados do evento' );
     }
     return $output;
   }
