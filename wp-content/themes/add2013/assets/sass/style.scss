@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
-@import "gumby";
+// Base
+@import "gumby"; //Grid Base
+@import "print";
 @import "fonts";
 @import "variables";
+
+// Elements
 @import "common";
 @import "nav"; 
 @import "social";
 @import "header";
+
+// Sections
 @import "speakers";
 @import "schedule"; 
 @import "lightning-talks";

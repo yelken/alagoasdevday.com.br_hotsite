@@ -13,6 +13,7 @@
   <meta name="description" content="Juntamos o visual de uma cidade paradisíaca, um lugar que respira arte e separamos um dia para conversar apenas sobre programação. O resultado disso tudo é uma experiência incrível sobre desenvolvimento em diversas linguagens." />
   <meta name="keywords" content="alagoas,devday" />
   <meta name="author" content="humans.txt">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://alagoasdevday.com.br">
