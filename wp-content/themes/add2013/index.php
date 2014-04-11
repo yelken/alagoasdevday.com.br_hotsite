@@ -107,8 +107,7 @@
           Você pode participar do Alagoas Dev Day com um <span>Lightning Talks</span> de 20 minutos. Serão 03 ideias escolhidas por voto popular.
         </div>
         <div class="submit-box centered eight columns">
-          Inscreva seu projeto de desenvolvimento <span>(back-end, front-end ou design)</span> ou sua ideia de startup. É só submeter sua ideia no site e pedir pra galera votar.
-          <a href="http://call4paperz.com/events/alagoas-dev-day" target="_blank">Envie seu roteiro agora mesmo</a>
+          Inscrições encerradas
         </div>
       </div>
 
@@ -133,8 +132,7 @@
         </div>
 
         <div class="submit-box centered eight columns">
-          O Alagoas Dev Day procura um público seleto e restrito, para um dia inteiro de codificação e muita pipoca.
-          <a href="http://www.doity.com.br/aldevday" target="_blank">Faça sua inscrição.</a>
+          Inscrições encerradas
         </div>
       </div>
 
