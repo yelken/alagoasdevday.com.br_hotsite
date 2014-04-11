@@ -129,7 +129,7 @@
 
       <div class="row">
         <div class="description-box centered eight columns">
-          Aproveite o primeiro lote de inscrições, com o valor promocional de <span class="price">R$45,00</span>. <span>Imperdível</span>.
+          Aproveite o segundo lote de inscrições, com o valor promocional de <span class="price">R$65,00</span>. <span>Imperdível</span>.
         </div>
 
         <div class="submit-box centered eight columns">
