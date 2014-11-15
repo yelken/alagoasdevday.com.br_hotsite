@@ -1,0 +1,125 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: url('../images/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding-top: 42px;
+}
+
+.event {
+  text-align: center;
+}
+.event-date {
+    border: 1px solid #16ae91;
+    display: inline-block;
+    font-size: 40px;
+    padding: 36px 82px;
+    text-transform: uppercase;
+    color: #16ae91;
+    font-weight: 300;
+}
+.location {
+    color: #16ae91;
+    font-size: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 36px;
+    padding-bottom: 44px;
+    font-weight: 300;
+}
+.register-here {
+  background: #f2c600;
+  display: inline-block;
+  padding: 30px 72px;
+  color: #111529;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  &:hover {
+    text-decoration: none;
+    color: #111529;
+  }
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #16ae91;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  ul {
+    padding: 0;
+    margin: 30px 0 0 0;
+    list-style: none;
+
+    li {
+      background: #f2c600;
+      display: inline-block;
+      width: 49px;
+      height: 49px;
+      padding: 0;
+      margin: 0 2px;
+      a {
+        display: block;
+        height: 100%;
+        text-indent: -99999px
+      }
+    }
+    li:first-child {
+      a {
+
+        background: url('../images/twitter.png') no-repeat center center;
+      }
+    }
+    li:last-child {
+      a {
+        background: url('../images/facebook.png') no-repeat center center;
+      }
+    }
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
