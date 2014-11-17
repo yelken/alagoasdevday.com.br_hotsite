@@ -85,15 +85,20 @@ body {
         text-indent: -99999px
       }
     }
-    li:first-child {
+    li.twitter {
       a {
 
         background: url('../images/twitter.png') no-repeat center center;
       }
     }
-    li:last-child {
+    li.facebook{
       a {
         background: url('../images/facebook.png') no-repeat center center;
+      }
+    }
+    li.letter {
+      a {
+        background: url('../images/letter.png') no-repeat center center;
       }
     }
   }
